@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Métadonnées SEO de base -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Serrurier Professionnel à Casablanca - Dépannage 24h/24</title>
+    <meta name="description" content="Serrurier professionnel à Casablanca. Intervention rapide 24h/24, ouverture de porte, changement de serrures, duplication de clés et serrurerie automobile." />
+    <meta name="keywords" content="serrurier, Casablanca, dépannage, ouverture de porte, changement de serrures, clés, coffre-fort, voiture" />
+    <meta name="author" content="Serruriers Silca" />
+
+    <!-- Google Fonts : Roboto & Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet" />
+
+    <!-- FontAwesome pour icônes -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-9v2/3VjYc3n3VZV4O3U1WvW3hZkzJrj1T3cHF8G6p5LxWbG8Hkq5mI0QvZ5eJfV6qF1cFQkU8i0x8xvC9M3yWg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation fixe -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <!-- Logo -->
+        <a href="#accueil" class="nav__brand" aria-label="Retour à l'accueil">
+          <img src="assets/images/logo.jpg" alt="Logo Serrurier" class="nav__logo" />
+          <span class="nav__title">Serrurier Nour</span>
+        </a>
+
+        <!-- Menu desktop -->
+        <ul class="nav__menu" id="navMenu" role="menubar" aria-label="Navigation principale">
+          <li role="none"><a role="menuitem" href="#accueil" class="nav__link">Accueil</a></li>
+          <li role="none"><a role="menuitem" href="#services" class="nav__link">Services</a></li>
+          <li role="none"><a role="menuitem" href="#galerie" class="nav__link">Galerie</a></li>
+          <li role="none"><a role="menuitem" href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+
+        <!-- Téléphone visible à droite -->
+        <div class="nav__phone">
+          <a href="tel:0665449512" class="phone__cta">
+            <i class="fa-solid fa-phone"></i>
+            <span>06 65 44 95 12</span>
+          </a>
+        </div>
+
+        <!-- Bouton hamburger pour mobile -->
+        <button class="nav__toggle" id="navToggle" aria-label="Ouvrir le menu">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- SECTION HÉROS -->
+    <section id="accueil" class="hero reveal" aria-label="Section Héros">
+      <div class="container hero__content">
+        <h1 class="hero__title">Serrurier Professionnel - Dépannage 24h/24</h1>
+        <p class="hero__subtitle">Intervention Rapide - Service d'Urgence</p>
+        <div class="hero__actions">
+          <a href="tel:0665449512" class="btn btn--primary">
+            <i class="fa-solid fa-phone"></i> Appelez-nous : 06 65 44 95 12
+          </a>
+          <a href="#services" class="btn btn--secondary" data-scroll>
+            <i class="fa-solid fa-wrench"></i> Nos Services
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION SERVICES -->
+    <section id="services" class="services section reveal" aria-label="Nos Services">
+      <div class="container">
+        <h2 class="section__title">Nos Services</h2>
+        <p class="section__subtitle">Des solutions complètes pour votre sécurité</p>
+
+        <div class="services__grid">
+          <!-- Catégorie 1 - Portes & Serrures Résidentielles -->
+          <article class="card">
+            <div class="card__header">
+              <i class="fa-solid fa-door-closed card__icon"></i>
+              <h3 class="card__title">Portes & Serrures Résidentielles</h3>
+            </div>
+            <ul class="card__list">
+              <li>Porte blindée</li>
+              <li>Serrure standard</li>
+              <li>Serrure multipoints</li>
+              <li>Changement de serrures</li>
+              <li>Dépannage en serrurerie</li>
+            </ul>
+          </article>
+
+          <!-- Catégorie 2 - Copie & Duplication -->
+          <article class="card">
+            <div class="card__header">
+              <i class="fa-solid fa-key card__icon"></i>
+              <h3 class="card__title">Copie & Duplication</h3>
+            </div>
+            <ul class="card__list">
+              <li>Copie de serrure</li>
+              <li>Copie de clés de bâtiment</li>
+              <li>Copie de clés de voiture</li>
+              <li>Fabrication de nouvelles clés électroniques</li>
+              <li>Clés codées et électroniques</li>
+            </ul>
+          </article>
+
+          <!-- Catégorie 3 - Serrures Spécialisées -->
+          <article class="card">
+            <div class="card__header">
+              <i class="fa-solid fa-shield-halved card__icon"></i>
+              <h3 class="card__title">Serrures Spécialisées</h3>
+            </div>
+            <ul class="card__list">
+              <li>Serrure de caisse</li>
+              <li>Serrure de Garage</li>
+              <li>Serrure de coffre-fort</li>
+              <li>Serrures haute sécurité</li>
+            </ul>
+          </article>
+
+          <!-- Catégorie 4 - Serrurerie Automobile -->
+          <article class="card">
+            <div class="card__header">
+              <i class="fa-solid fa-car-side card__icon"></i>
+              <h3 class="card__title">Serrurerie Automobile</h3>
+            </div>
+            <ul class="card__list">
+              <li>Serrure de Voiture</li>
+              <li>Changement de serrures de voiture</li>
+              <li>Copie de clés de voiture</li>
+              <li>Déblocage de portières</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION GALERIE -->
+    <section id="galerie" class="gallery section reveal" aria-label="Galerie du magasin">
+      <div class="container">
+        <h2 class="section__title">Galerie</h2>
+        <p class="section__subtitle">Aperçu de notre magasin et de nos réalisations</p>
+
+        <div class="gallery__grid">
+          <!-- 4 images minimum, lazy loading -->
+          <figure class="gallery__item">
+            <img src="assets/images/magasin-1.jpeg" alt="Porte blindée installée" loading="lazy" decoding="async" />
+            <figcaption>Porte blindée - Installation à Casablanca</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="assets/images/magasin-2.jpeg" alt="Remplacement de serrure standard" loading="lazy" decoding="async" />
+            <figcaption>Serrure standard - Remplacement rapide</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="assets/images/gallery3.jpeg" alt="Serrure multipoints" loading="lazy" decoding="async" />
+            <figcaption>Serrure multipoints - Sécurité renforcée</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="assets/images/clefs.jpeg" alt="Duplication de clés de voiture" loading="lazy" decoding="async" />
+            <figcaption>Duplication de clés de voiture - Toutes marques</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact" class="contact section reveal" aria-label="Nous contacter">
+      <div class="container">
+        <h2 class="section__title">Contactez-nous</h2>
+        <p class="section__subtitle">Une question ou un devis ? Écrivez-nous</p>
+
+        <div class="contact__grid">
+          <div class="contact__info">
+            <ul class="contact__list">
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Adresse :</span>
+                <strong>مفاتيح نور, 38 Rue Meskallile، Casablanca 20200</strong>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <span>Téléphone :</span>
+                <a href="tel:0665449512" class="link">0665449512</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email :</span>
+                <a href="mailto:contact@serruriersilca.com" class="link">contact@gmail.com</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-clock"></i>
+                <span>Horaires :</span>
+                <div class="contact__hours">
+                  <span>24h/24, 7j/7 - Urgences</span>
+                  <span>Lun-Ven: 8h-18h - Standard</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="contact__cta">
+            <a href="tel:0665449512" class="btn btn--primary btn--block">
+              <i class="fa-solid fa-phone"></i> Appeler maintenant
+            </a>
+            <a href="mailto:contact@serruriersilca.com" class="btn btn--secondary btn--block">
+              <i class="fa-solid fa-envelope"></i> Envoyer un email
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logo WhatsApp FIXE en bas à droite -->
+    <a
+      href="https://wa.me/212665449512?text=Bonjour%2C%20je%20vous%20contacte%20depuis%20votre%20site%20web"
+      class="whatsapp"
+      target="_blank"
+      rel="noopener"
+      aria-label="Discuter sur WhatsApp"
+    >
+      <img src="assets/images/whatsapp-icon.png" alt="WhatsApp" class="whatsapp__img" />
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <img src="assets/images/logo.jpg" alt="Logo Serrurier" class="footer__logo" />
+          <span class="footer__title">Serrurier Nour</span>
+        </div>
+        <ul class="footer__links">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="footer__contact">
+          <a href="tel:0665449512" class="phone__cta">
+            <i class="fa-solid fa-phone"></i>
+            <span>06 65 44 95 12</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer__copy">
+        <small>© <span id="year"></span> Serrurier Nour — Tous droits réservés.</small>
+      </div>
+    </footer>
+
+    <!-- Schema.org LocalBusiness pour référencement local -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Serruriers Silca",
+        "image": "assets/images/logo.jpg",
+        "telephone": "+212665449512",
+        "email": "contact@serruriersilca.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "مفاتيح نور, 38 Rue Meskallile",
+          "addressLocality": "Casablanca",
+          "postalCode": "20200",
+          "addressCountry": "MA"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "18:00"
+          }
+        ],
+        "areaServed": "Casablanca et environs",
+        "url": ""
+      }
+    </script>
+
+    <!-- Script principal -->
+    <script src="script.js"></script>
+
+    <!-- Fallback si JavaScript est désactivé -->
+    <noscript>
+      Votre navigateur ne supporte pas JavaScript ou celui-ci est désactivé. Le défilement fluide et les animations ne seront pas disponibles.
+    </noscript>
+  </body>
+</html>
