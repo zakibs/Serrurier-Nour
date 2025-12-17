@@ -1,10 +1,5 @@
-/* ==========================================================================
-   Styles principaux
-   Palette professionnelle inspirée bleu foncé / orange
-   Mobile-first, responsive, animations subtiles au scroll
-   ========================================================================== */
 
-/* Variables de thème */
+
 :root {
   --blue-900: #0a2540;
   --blue-700: #163c5a;
@@ -22,14 +17,14 @@
   --container: 1100px;
 }
 
-/* Reset et base typographique */
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 html {
-  scroll-behavior: auto; /* Smooth via JS natif (exigence) */
+  scroll-behavior: auto; 
 }
 body {
   margin: 0;
@@ -53,7 +48,7 @@ ul {
   list-style: none;
 }
 
-/* Conteneur */
+
 .container {
   width: 100%;
   max-width: var(--container);
@@ -61,7 +56,7 @@ ul {
   padding: 0 1rem;
 }
 
-/* Header / Navigation fixe */
+
 .header {
   position: fixed;
   top: 0;
@@ -146,7 +141,7 @@ ul {
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-/* Héros */
+
 .hero {
   padding: 128px 0 72px;
   background:
@@ -179,7 +174,7 @@ ul {
   justify-content: center;
 }
 
-/* Boutons */
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -213,7 +208,6 @@ ul {
   transform: translateY(-1px);
 }
 
-/* Sections génériques */
 .section {
   padding: 64px 0;
 }
@@ -230,7 +224,6 @@ ul {
   margin-bottom: 1.5rem;
 }
 
-/* Services grid */
 .services__grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -271,7 +264,6 @@ ul {
   color: var(--orange-500);
 }
 
-/* Galerie */
 .gallery__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -303,7 +295,7 @@ ul {
   font-size: 0.9rem;
 }
 
-/* Contact */
+
 .contact__grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -343,7 +335,7 @@ ul {
   text-decoration: underline;
 }
 
-/* WhatsApp flottant */
+
 .whatsapp {
   position: fixed;
   right: 16px;
@@ -369,7 +361,7 @@ ul {
   object-fit: contain;
 }
 
-/* Footer */
+
 .footer {
   background: var(--blue-900);
   color: var(--white);
@@ -412,7 +404,7 @@ ul {
   color: #c9d6e2;
 }
 
-/* Animations au scroll (subtiles) */
+
 .reveal {
   opacity: 0;
   transform: translateY(16px);
@@ -423,7 +415,7 @@ ul {
   transform: translateY(0);
 }
 
-/* Responsivité (tablettes et plus) */
+
 @media (min-width: 640px) {
   .nav__menu {
     display: flex;
@@ -439,7 +431,7 @@ ul {
   }
 }
 
-/* Responsivité (desktop) */
+
 @media (min-width: 920px) {
   .hero__title {
     font-size: 2.6rem;
@@ -460,7 +452,7 @@ ul {
   }
 }
 
-/* Ultra-mobile (petits téléphones <= 360px) */
+
 @media (max-width: 360px) {
   .nav {
     height: 56px;
