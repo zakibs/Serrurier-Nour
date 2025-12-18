@@ -1,10 +1,4 @@
-// ============================================================================
-// Script principal du site (JavaScript vanilla)
-// - Défilement fluide natif
-// - Menu mobile (hamburger)
-// - Animations au scroll via IntersectionObserver
-// - Utilitaires et améliorations UX
-// ============================================================================
+
 
 document.addEventListener('DOMContentLoaded', () => {
   // Sélecteurs utiles
@@ -15,14 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const links = document.querySelectorAll('.nav__link, [data-scroll]');
   const yearEl = document.getElementById('year');
 
-  // Met à jour l'année dans le footer
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
 
-  // --------------------------------------------------------------------------
-  // Menu mobile : ouverture/fermeture
-  // --------------------------------------------------------------------------
+
   function toggleMenu() {
     nav.classList.toggle('nav--open');
     const isOpen = nav.classList.contains('nav--open');
@@ -32,15 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
     navToggle.addEventListener('click', toggleMenu);
   }
 
-  // Ferme le menu quand on clique sur un lien
+  
   function closeMenu() {
     nav.classList.remove('nav--open');
     navToggle.setAttribute('aria-expanded', 'false');
   }
 
-  // --------------------------------------------------------------------------
-  // Défilement fluide natif vers les ancres
-  // --------------------------------------------------------------------------
+
   function smoothScrollTo(targetSelector) {
     const target = document.querySelector(targetSelector);
     if (!target) return;
@@ -58,9 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // --------------------------------------------------------------------------
-  // Observer pour révéler les sections au scroll
-  // --------------------------------------------------------------------------
   const revealEls = document.querySelectorAll('.reveal');
   const revealObserver = new IntersectionObserver(
     (entries) => {
@@ -76,9 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
   );
   revealEls.forEach((el) => revealObserver.observe(el));
 
-  // --------------------------------------------------------------------------
-  // Mise en surbrillance du lien actif (section visible)
-  // --------------------------------------------------------------------------
+
   const sections = Array.from(document.querySelectorAll('section[id]'));
   const sectionObserver = new IntersectionObserver(
     (entries) => {
@@ -96,6 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
   );
   sections.forEach((s) => sectionObserver.observe(s));
 
+<<<<<<< HEAD
   // --------------------------------------------------------------------------
   // Amélioration : rendre tel/mail cliquables depuis boutons (déjà présents)
   // --------------------------------------------------------------------------
@@ -216,4 +201,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     requestAnimationFrame(loop);
   }
+=======
+>>>>>>> a2a2dd1121a61f7f8294988d6a52fa5f38e2ea6c
 });
