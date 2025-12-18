@@ -64,21 +64,50 @@
     <!-- SECTION HÉROS -->
     <section id="accueil" class="hero reveal" aria-label="Section Héros">
       <div class="container hero__content">
-        <h1 class="hero__title">Serrurier Professionnel - Dépannage 24h/24</h1>
-        <p class="hero__subtitle">Intervention Rapide - Service d'Urgence</p>
-        <div class="hero__actions">
-          <a href="tel:0665449512" class="btn btn--primary">
-            <i class="fa-solid fa-phone"></i> Appelez-nous : 06 65 44 95 12
-          </a>
-          <a href="#services" class="btn btn--secondary" data-scroll>
-            <i class="fa-solid fa-wrench"></i> Nos Services
-          </a>
+        <div class="hero__left">
+          <h1 class="hero__title">Serrurier Professionnel - Dépannage 24h/24</h1>
+          <p class="hero__subtitle">Intervention Rapide - Service d'Urgence</p>
+          <div class="hero__actions">
+            <span class="btn-glow">
+              <a href="tel:0665449512" class="btn btn--primary">
+                <span class="icon"></span> Appelez-nous : 06 65 44 95 12
+              </a>
+            </span>
+            <span class="btn-glow">
+              <a href="#services" class="btn btn--secondary" data-scroll>
+                <span class="icon"></span> Nos Services
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="hero__right">
+          <spline-viewer url="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode" class="spline-viewer"></spline-viewer>
         </div>
       </div>
     </section>
 
     <!-- SECTION SERVICES -->
     <section id="services" class="services section reveal" aria-label="Nos Services">
+      <div class="services__effect" aria-hidden="true">
+        <svg class="services__defs" xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+          <defs>
+            <filter id="svc-ethereal">
+              <feTurbulence result="undulation" numOctaves="2" baseFrequency="0.001,0.003" seed="0" type="turbulence" />
+              <feColorMatrix id="svc-hue" in="undulation" type="hueRotate" values="180">
+                <animate attributeName="values" from="0" to="360" dur="20s" repeatCount="indefinite" />
+              </feColorMatrix>
+              <feColorMatrix in="dist" result="circulation" type="matrix" values="4 0 0 0 1  4 0 0 0 1  4 0 0 0 1  1 0 0 0 0" />
+              <feDisplacementMap in="SourceGraphic" in2="circulation" scale="40" result="dist">
+                <animate attributeName="scale" values="30;60;30" dur="12s" repeatCount="indefinite" />
+              </feDisplacementMap>
+              <feDisplacementMap in="dist" in2="undulation" scale="40" result="output">
+                <animate attributeName="scale" values="20;50;20" dur="14s" repeatCount="indefinite" />
+              </feDisplacementMap>
+            </filter>
+          </defs>
+        </svg>
+      </div>
+      <canvas class="services__flag" id="servicesFlag" aria-hidden="true"></canvas>
       <div class="container">
         <h2 class="section__title">Nos Services</h2>
         <p class="section__subtitle">Des solutions complètes pour votre sécurité</p>
@@ -92,8 +121,6 @@
             </div>
             <ul class="card__list">
               <li>Porte blindée</li>
-              <li>Serrure standard</li>
-              <li>Serrure multipoints</li>
               <li>Changement de serrures</li>
               <li>Dépannage en serrurerie</li>
             </ul>
@@ -106,10 +133,8 @@
               <h3 class="card__title">Copie & Duplication</h3>
             </div>
             <ul class="card__list">
-              <li>Copie de serrure</li>
               <li>Copie de clés de bâtiment</li>
-              <li>Copie de clés de voiture</li>
-              <li>Fabrication de nouvelles clés électroniques</li>
+              <li>Fabrication des clés électroniques</li>
               <li>Clés codées et électroniques</li>
             </ul>
           </article>
@@ -135,10 +160,8 @@
               <h3 class="card__title">Serrurerie Automobile</h3>
             </div>
             <ul class="card__list">
-              <li>Serrure de Voiture</li>
               <li>Changement de serrures de voiture</li>
               <li>Copie de clés de voiture</li>
-              <li>Déblocage de portières</li>
             </ul>
           </article>
         </div>
@@ -206,14 +229,19 @@
                 </div>
               </li>
             </ul>
-          </div>
-          <div class="contact__cta">
-            <a href="tel:0665449512" class="btn btn--primary btn--block">
-              <i class="fa-solid fa-phone"></i> Appeler maintenant
-            </a>
-            <a href="mailto:contact@serruriersilca.com" class="btn btn--secondary btn--block">
-              <i class="fa-solid fa-envelope"></i> Envoyer un email
-            </a>
+            <br>
+            <div class="contact__cta">
+                  <span class="btn-glow btn-glow--block">
+                    <a href="tel:0665449512" class="btn btn--primary btn--block">
+                      <span class="icon"></span> Appeler maintenant
+                    </a>
+                  </span>
+                  <span class="btn-glow btn-glow--block">
+                    <a href="mailto:contact@serruriersilca.com" class="btn btn--secondary btn--block">
+                      <span class="icon"></span> Envoyer un email
+                    </a>
+                  </span>
+            </div>
           </div>
         </div>
       </div>
@@ -286,6 +314,7 @@
 
     <!-- Script principal -->
     <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@latest/build/spline-viewer.js"></script>
 
     <!-- Fallback si JavaScript est désactivé -->
     <noscript>
