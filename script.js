@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
   // Sélecteurs utiles
   const nav = document.querySelector('.nav');
@@ -80,7 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
   );
   sections.forEach((s) => sectionObserver.observe(s));
 
-<<<<<<< HEAD
   // --------------------------------------------------------------------------
   // Amélioration : rendre tel/mail cliquables depuis boutons (déjà présents)
   // --------------------------------------------------------------------------
@@ -201,6 +198,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     requestAnimationFrame(loop);
   }
-=======
->>>>>>> a2a2dd1121a61f7f8294988d6a52fa5f38e2ea6c
 });
